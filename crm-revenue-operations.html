@@ -3,55 +3,214 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>CRM & Revenue Operations | Alexis Montenegro, MBA</title>
-<meta name="description" content="Case study by Alexis Montenegro, MBA: architecting a HubSpot CRM and revenue operations foundation supporting 55K+ contacts, approximately 40 users, 100+ workflows, and 15 Zapier automations.">
+
+<meta
+    name="description"
+    content="Case study by Alexis Montenegro, MBA: architecting a HubSpot CRM and revenue operations foundation supporting 55K+ contacts, approximately 40 users, 100+ workflows, and 15 Zapier automations."
+>
+
 <link rel="icon" type="image/png" href="favicon.png">
+
 <style>
-:root{--text-color:#20124d;--link-color:#1155cc;--border-color:#ded9ea;--muted-color:#5e5677;--soft-bg:#faf9fd;}
-*{box-sizing:border-box} html{scroll-behavior:smooth}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#fff;color:var(--text-color);margin:0;line-height:1.6}
+:root{
+    --text-color:#20124d;
+    --link-color:#1155cc;
+    --border-color:#ded9ea;
+    --muted-color:#5e5677;
+    --soft-bg:#faf9fd;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:#ffffff;
+    color:var(--text-color);
+    margin:0;
+    line-height:1.6;
+}
+
 .container{max-width:900px;margin:70px auto;padding:0 40px}
-.back-link{display:inline-block;margin-bottom:34px;color:var(--link-color);text-decoration:none;font-weight:600;font-size:16px}
-.back-link:hover,.back-link:focus{text-decoration:underline}
-h1{font-size:46px;line-height:1.12;margin:0 0 12px;font-weight:700;letter-spacing:-1.2px}
+
+.back-link{
+    display:inline-block;
+    margin-bottom:34px;
+    color:var(--link-color);
+    text-decoration:none;
+    font-weight:600;
+    font-size:16px;
+}
+
+.back-link:hover,
+.back-link:focus{text-decoration:underline}
+
+h1{
+    font-size:46px;
+    line-height:1.12;
+    margin:0 0 12px;
+    font-weight:700;
+    letter-spacing:-1.2px;
+}
+
 .subtitle{font-size:19px;color:var(--muted-color);margin-bottom:40px}
-.hero-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:0 0 54px}
-.metric{border:1px solid var(--border-color);border-radius:14px;padding:22px;background:var(--soft-bg)}
-.metric-number{font-size:34px;line-height:1;font-weight:700;letter-spacing:-1px;margin-bottom:8px}
-.metric-label{font-size:15px;line-height:1.35;color:var(--muted-color)}
-.section{margin-bottom:44px}.section h2{font-size:23px;line-height:1.3;margin:0 0 12px}
-.section p{margin:0 0 14px;font-size:17px}.section ul{margin:0;padding-left:22px}.section li{margin-bottom:9px;font-size:17px}
-.result-box{border-left:4px solid var(--text-color);padding:4px 0 4px 18px;margin-top:10px}
+
+.hero-metrics{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:16px;
+    margin:0 0 54px;
+}
+
+.metric{
+    border:1px solid var(--border-color);
+    border-radius:14px;
+    padding:22px;
+    background:var(--soft-bg);
+}
+
+.metric-number{
+    font-size:34px;
+    line-height:1;
+    font-weight:700;
+    letter-spacing:-1px;
+    margin-bottom:8px;
+}
+
+.metric-label{
+    font-size:15px;
+    line-height:1.35;
+    color:var(--muted-color);
+}
+
+.section{margin-bottom:44px}
+.section h2{font-size:23px;line-height:1.3;margin:0 0 12px}
+.section p{margin:0 0 14px;font-size:17px}
+.section ul{margin:0;padding-left:22px}
+.section li{margin-bottom:9px;font-size:17px}
+
+.result-box{
+    border-left:4px solid var(--text-color);
+    padding:4px 0 4px 18px;
+    margin-top:10px;
+}
+
 .tools{color:var(--muted-color);font-size:15px}
-.cta{margin-top:56px;padding-top:28px;border-top:1px solid var(--border-color)}
-.cta a{color:var(--link-color);text-decoration:none;font-weight:600;margin-right:22px}.cta a:hover,.cta a:focus{text-decoration:underline}
-.footer{color:var(--text-color);margin-top:72px;padding-top:28px;border-top:1px solid var(--border-color);font-size:15px;text-align:center;line-height:1.7}
-.footer-logo{display:block;width:100px;height:auto;margin:20px auto 0;opacity:.9}
-a:focus-visible{outline:3px solid rgba(17,85,204,.25);outline-offset:4px;border-radius:3px}
-@media(max-width:800px){.hero-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:700px){.container{margin:45px auto;padding:0 24px}h1{font-size:34px;letter-spacing:-.6px}.subtitle{font-size:17px;margin-bottom:32px}.hero-metrics{grid-template-columns:1fr;margin-bottom:42px}.metric-number{font-size:34px}.section{margin-bottom:36px}.section p,.section li{font-size:16px}.cta a{display:block;margin:0 0 12px}}
-@media(max-width:420px){.container{padding:0 20px}h1{font-size:30px}}
+
+.cta{
+    margin-top:56px;
+    padding-top:28px;
+    border-top:1px solid var(--border-color);
+}
+
+.cta a{
+    color:var(--link-color);
+    text-decoration:none;
+    font-weight:600;
+    margin-right:22px;
+}
+
+.cta a:hover,
+.cta a:focus{text-decoration:underline}
+
+.footer{
+    color:var(--text-color);
+    margin-top:72px;
+    padding-top:28px;
+    border-top:1px solid var(--border-color);
+    font-size:15px;
+    text-align:center;
+    line-height:1.7;
+}
+
+.footer-logo{
+    display:block;
+    width:100px;
+    height:auto;
+    margin:20px auto 0;
+    opacity:.9;
+}
+
+a:focus-visible{
+    outline:3px solid rgba(17,85,204,.25);
+    outline-offset:4px;
+    border-radius:3px;
+}
+
+@media(max-width:800px){
+    .hero-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+@media(max-width:700px){
+    .container{margin:45px auto;padding:0 24px}
+    h1{font-size:34px;letter-spacing:-0.6px}
+    .subtitle{font-size:17px;margin-bottom:32px}
+    .hero-metrics{grid-template-columns:1fr;margin-bottom:42px}
+    .metric-number{font-size:34px}
+    .section{margin-bottom:36px}
+    .section p,.section li{font-size:16px}
+    .cta a{display:block;margin:0 0 12px}
+}
+
+@media(max-width:420px){
+    .container{padding:0 20px}
+    h1{font-size:30px}
+}
 </style>
+
 </head>
+
 <body>
+
 <main class="container">
+
 <a class="back-link" href="/">← Back to Home</a>
+
 <header>
 <h1>CRM &amp; Revenue Operations</h1>
-<div class="subtitle">Building the CRM, automation, attribution, and reporting infrastructure used across the prospective-client journey.</div>
+
+<div class="subtitle">
+Building the CRM, automation, attribution, and reporting infrastructure used across the prospective-client journey.
+</div>
 </header>
+
 <section class="hero-metrics" aria-label="Key results">
-<div class="metric"><div class="metric-number">55K+</div><div class="metric-label">CRM contacts</div></div>
-<div class="metric"><div class="metric-number">~40</div><div class="metric-label">Users supported</div></div>
-<div class="metric"><div class="metric-number">100+</div><div class="metric-label">HubSpot workflows</div></div>
-<div class="metric"><div class="metric-number">15</div><div class="metric-label">Zapier automations</div></div>
+
+<div class="metric">
+<div class="metric-number">55K+</div>
+<div class="metric-label">CRM contacts</div>
+</div>
+
+<div class="metric">
+<div class="metric-number">~40</div>
+<div class="metric-label">Users supported</div>
+</div>
+
+<div class="metric">
+<div class="metric-number">100+</div>
+<div class="metric-label">HubSpot workflows</div>
+</div>
+
+<div class="metric">
+<div class="metric-number">15</div>
+<div class="metric-label">Zapier automations</div>
+</div>
+
 </section>
+
 <section class="section">
 <h2>The Challenge</h2>
-<p>Marketing, Booking, Intake, Client Services, and executive leadership were using different processes and systems to manage lead data, lifecycle stages, follow-up, attribution, and reporting. The organization needed one CRM structure that could support those functions consistently.</p>
+
+<p>
+Marketing, Booking, Intake, Client Services, and executive leadership were using different processes and systems to manage lead data, lifecycle stages, follow-up, attribution, and reporting. The organization needed one CRM structure that could support those functions consistently.
+</p>
 </section>
+
 <section class="section">
 <h2>What I Did</h2>
+
 <ul>
 <li>Architected and implemented HubSpot around the firm's actual prospective-client journey.</li>
 <li>Standardized lifecycle stages, properties, lead-management processes, attribution logic, governance, and reporting.</li>
@@ -60,25 +219,55 @@ a:focus-visible{outline:3px solid rgba(17,85,204,.25);outline-offset:4px;border-
 <li>Built executive reporting for marketing and client-acquisition performance.</li>
 </ul>
 </section>
+
 <section class="section">
 <h2>Business Impact</h2>
-<div class="result-box"><p>The CRM supports <strong>55K+ contacts</strong> and approximately <strong>40 users</strong>, with <strong>100+ HubSpot workflows</strong> and <strong>15 Zapier automations</strong>.</p></div>
-<p>Marketing, Booking, Intake, Client Services, and executive leadership now work from a shared lifecycle and reporting structure.</p>
+
+<div class="result-box">
+<p>
+The CRM supports <strong>55K+ contacts</strong> and approximately <strong>40 users</strong>, with <strong>100+ HubSpot workflows</strong> and <strong>15 Zapier automations</strong>.
+</p>
+</div>
+
+<p>
+Marketing, Booking, Intake, Client Services, and executive leadership now work from a shared lifecycle and reporting structure.
+</p>
 </section>
+
 <section class="section">
 <h2>My Role</h2>
-<p>I led the CRM architecture, implementation, governance, automation strategy, reporting framework, and adoption. I translated existing operating processes into the system and continue to administer the platform.</p>
+
+<p>
+I led the CRM architecture, implementation, governance, automation strategy, reporting framework, and adoption. I translated existing operating processes into the system and continue to administer the platform.
+</p>
 </section>
+
 <section class="section">
 <h2>Tools &amp; Systems</h2>
-<p class="tools">HubSpot • Zapier • CallRail • CRM Attribution • Lifecycle Automation • Executive Reporting • Data Governance</p>
+
+<p class="tools">
+HubSpot • Zapier • CallRail • CRM Attribution • Lifecycle Automation • Executive Reporting • Data Governance
+</p>
 </section>
+
 <div class="cta">
-<a href="Full-Executive-Portfolio.pdf" target="_blank" rel="noopener noreferrer">View Full Executive Portfolio →</a>
-<a href="Alexis-Montenegro-Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume →</a>
+<a href="Alexis-Montenegro-Resume.pdf" target="_blank" rel="noopener noreferrer">
+View Resume →
+</a>
+
+<a href="/">
+Back to Home →
+</a>
 </div>
-<div class="footer"><strong>Alexis Montenegro, MBA</strong><br>Marketing Operations • Revenue Operations • Business Systems • AI &amp; Operational Strategy
-<img src="logo.png" alt="Alexis Montenegro logo" class="footer-logo"></div>
+
+<div class="footer">
+<strong>Alexis Montenegro, MBA</strong><br>
+Marketing Operations • Revenue Operations • Business Systems • AI &amp; Operational Strategy
+
+<img src="logo.png" alt="Alexis Montenegro logo" class="footer-logo">
+</div>
+
 </main>
+
 </body>
 </html>
