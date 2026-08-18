@@ -8,7 +8,7 @@
 
 <meta
     name="description"
-    content="Executive portfolio of Alexis Montenegro, MBA, featuring marketing operations, revenue operations, business systems, AI, and operational strategy."
+    content="Executive portfolio of Alexis Montenegro, MBA, featuring measurable results across growth marketing, marketing operations, revenue operations, CRM, business systems, and automation."
 >
 
 <link rel="icon" type="image/png" href="favicon.png">
@@ -18,6 +18,8 @@
     --text-color:#20124d;
     --link-color:#1155cc;
     --border-color:#ded9ea;
+    --muted-color:#5e5677;
+    --soft-bg:#faf9fd;
 }
 
 *{
@@ -37,7 +39,7 @@ body{
 }
 
 .container{
-    max-width:850px;
+    max-width:900px;
     margin:90px auto;
     padding:0 40px;
 }
@@ -60,7 +62,7 @@ h1 a{
 .subtitle{
     color:var(--text-color);
     font-size:20px;
-    margin-bottom:40px;
+    margin-bottom:36px;
 }
 
 .intro{
@@ -68,16 +70,17 @@ h1 a{
     font-size:30px;
     font-weight:300;
     line-height:1.4;
-    margin-bottom:60px;
+    margin-bottom:64px;
+    max-width:820px;
 }
 
 .section{
-    margin-bottom:50px;
+    margin-bottom:64px;
 }
 
 .section h2{
     color:var(--text-color);
-    margin:0 0 8px;
+    margin:0 0 18px;
     font-size:24px;
     line-height:1.3;
 }
@@ -92,7 +95,6 @@ h1 a{
     color:var(--link-color);
     text-decoration:none;
     font-weight:600;
-    font-size:20px;
 }
 
 .section a:hover,
@@ -105,6 +107,84 @@ h1 a:focus-visible{
     outline:3px solid rgba(17,85,204,.25);
     outline-offset:4px;
     border-radius:3px;
+}
+
+.impact-grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:18px;
+}
+
+.impact-card{
+    border:1px solid var(--border-color);
+    border-radius:14px;
+    padding:24px;
+    min-height:230px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    background:var(--soft-bg);
+}
+
+.impact-number{
+    font-size:42px;
+    line-height:1;
+    font-weight:700;
+    letter-spacing:-1px;
+    margin-bottom:10px;
+}
+
+.impact-title{
+    font-size:21px;
+    line-height:1.25;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.impact-copy{
+    color:var(--muted-color);
+    font-size:16px;
+    line-height:1.5;
+    margin-bottom:20px;
+}
+
+.impact-link{
+    font-size:17px;
+}
+
+.about{
+    font-size:18px;
+    line-height:1.7;
+    max-width:800px;
+}
+
+.work-grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:18px;
+}
+
+.work-card{
+    border-top:1px solid var(--border-color);
+    padding-top:18px;
+}
+
+.work-card h3{
+    margin:0 0 8px;
+    font-size:20px;
+}
+
+.work-card p{
+    color:var(--muted-color);
+    margin-bottom:10px;
+}
+
+.work-card a{
+    font-size:17px;
+}
+
+.connect-links a{
+    font-size:18px;
 }
 
 .footer{
@@ -139,7 +219,7 @@ h1 a:focus-visible{
 
     .subtitle{
         font-size:17px;
-        margin-bottom:30px;
+        margin-bottom:28px;
     }
 
     .intro{
@@ -148,15 +228,32 @@ h1 a:focus-visible{
     }
 
     .section{
-        margin-bottom:42px;
+        margin-bottom:48px;
     }
 
     .section h2{
         font-size:22px;
     }
 
-    .section a{
-        font-size:18px;
+    .impact-grid,
+    .work-grid{
+        grid-template-columns:1fr;
+    }
+
+    .impact-card{
+        min-height:auto;
+    }
+
+    .impact-number{
+        font-size:36px;
+    }
+
+    .impact-title{
+        font-size:20px;
+    }
+
+    .about{
+        font-size:17px;
     }
 
     .footer{
@@ -182,6 +279,10 @@ h1 a:focus-visible{
     .intro{
         font-size:22px;
     }
+
+    .impact-card{
+        padding:20px;
+    }
 }
 </style>
 
@@ -202,56 +303,116 @@ Marketing Operations • Revenue Operations • Business Systems • AI &amp; Op
 </div>
 
 <div class="intro">
-Building scalable systems that connect marketing, technology, and business operations.
+Building growth and revenue systems that turn marketing strategy into measurable business outcomes.
 </div>
 
-<div class="section">
+<section class="section" aria-labelledby="selected-impact">
 
-<h2>Executive Portfolio Highlights</h2>
+<h2 id="selected-impact">Selected Impact</h2>
 
-<p>
-A concise executive overview of five leadership case studies covering organizational change, CRM and revenue operations, marketing attribution, AI-enabled knowledge management, paid media, and organic growth. Includes measurable business results, executive competencies, and the leadership principles behind each initiative.
-</p>
+<div class="impact-grid">
 
-<a href="Executive-Portfolio-Highlights.pdf" target="_blank" rel="noopener noreferrer">
-View Executive Portfolio Highlights →
+<article class="impact-card">
+<div>
+<div class="impact-number">+188%</div>
+<div class="impact-title">Qualified Paid Leads</div>
+<div class="impact-copy">
+New-client acquisition increased 88% while acquisition costs decreased approximately 50% after paid media management moved in-house.
+</div>
+</div>
+<a class="impact-link" href="paid-media.html">
+View Paid Media Case Study →
 </a>
+</article>
 
+<article class="impact-card">
+<div>
+<div class="impact-number">+192%</div>
+<div class="impact-title">Search Impressions</div>
+<div class="impact-copy">
+Organic clicks increased 94%, organic traffic increased 89%, and Top 3 keyword rankings increased 110%.
 </div>
-
-<div class="section">
-
-<h2>Full Executive Portfolio</h2>
-
-<p>
-An in-depth portfolio documenting the strategy, planning, implementation, governance, adoption, and measurable outcomes behind major marketing operations, revenue operations, CRM, analytics, AI, automation, SEO, paid media, lifecycle marketing, lead routing, and business systems initiatives.
-</p>
-
-<a href="Full-Executive-Portfolio.pdf" target="_blank" rel="noopener noreferrer">
-View Full Executive Portfolio →
+</div>
+<a class="impact-link" href="organic-growth.html">
+View Organic Growth Case Study →
 </a>
+</article>
+
+<article class="impact-card">
+<div>
+<div class="impact-number">55K+</div>
+<div class="impact-title">CRM Contacts</div>
+<div class="impact-copy">
+HubSpot infrastructure supporting approximately 40 users, 100+ workflows, and 15 Zapier automations.
+</div>
+</div>
+<a class="impact-link" href="crm-revenue-operations.html">
+View CRM &amp; Revenue Operations Case Study →
+</a>
+</article>
+
+<article class="impact-card">
+<div>
+<div class="impact-number">+38%</div>
+<div class="impact-title">Campaign Delivery</div>
+<div class="impact-copy">
+monday.com implementation standardized campaign workflows, ownership, deadlines, and status tracking across Marketing.
+</div>
+</div>
+<a class="impact-link" href="organizational-change.html">
+View Organizational Change Case Study →
+</a>
+</article>
 
 </div>
 
-<div class="section">
+</section>
 
-<h2>Resume</h2>
+<section class="section" aria-labelledby="about">
 
-<p>
-Leadership experience spanning marketing operations, revenue operations, CRM strategy and administration, automation, analytics, organizational change, and scalable business systems.
+<h2 id="about">About</h2>
+
+<p class="about">
+Marketing and operations leader specializing in growth strategy, revenue operations, CRM architecture, automation, and scalable business systems. I lead approximately $2M in annual marketing investment and build the infrastructure connecting acquisition, customer data, technology, and business operations.
 </p>
 
+</section>
+
+<section class="section" aria-labelledby="selected-work">
+
+<h2 id="selected-work">Selected Work</h2>
+
+<div class="work-grid">
+
+<div class="work-card">
+<h3>Resume</h3>
+<p>
+One-page overview of leadership experience and measurable business results.
+</p>
 <a href="Alexis-Montenegro-Resume.pdf" target="_blank" rel="noopener noreferrer">
 View Resume →
 </a>
+</div>
+
+<div class="work-card">
+<h3>Full Executive Portfolio</h3>
+<p>
+Detailed documentation of strategy, implementation, governance, adoption, and results across major initiatives.
+</p>
+<a href="Full-Executive-Portfolio.pdf" target="_blank" rel="noopener noreferrer">
+View Full Executive Portfolio →
+</a>
+</div>
 
 </div>
 
-<div class="section">
+</section>
 
-<h2>Connect</h2>
+<section class="section" aria-labelledby="connect">
 
-<p>
+<h2 id="connect">Connect</h2>
+
+<p class="connect-links">
 <a href="https://linkedin.com/in/alexis-pollack" target="_blank" rel="noopener noreferrer">
 LinkedIn
 </a>
@@ -263,7 +424,7 @@ Email
 </a>
 </p>
 
-</div>
+</section>
 
 <div class="footer">
 
